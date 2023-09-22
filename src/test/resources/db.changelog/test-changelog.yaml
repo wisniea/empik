@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: wisniea
+      changes:
+        - createTable:
+            tableName: request_count
+            columns:
+              - column:
+                  name: login
+                  type: varchar2
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: request_count
+                  type: bigint
+  - changeSet:
+      id: 2
+      author: wisniea
+      changes:
+        - insert:
+            tableName: request_count
+            columns:
+              - column:
+                  name: login
+                  value: testIncrement
+              - column:
+                  name: request_count
+                  value: 456897

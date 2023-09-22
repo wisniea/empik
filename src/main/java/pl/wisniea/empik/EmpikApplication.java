@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Empik1Application {
+public class EmpikApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Empik1Application.class, args);
+        SpringApplication.run(EmpikApplication.class, args);
     }
 
 }

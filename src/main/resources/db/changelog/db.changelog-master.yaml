@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: request_count
+      author: wisniea
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_request_count
+                  name: login
+                  type: VARCHAR(255)
+              - column:
+                  name: request_count
+                  type: BIGINT
+            tableName: request_count
+
